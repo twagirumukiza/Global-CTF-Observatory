@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Global CTF Observatory — observatoire international des compétitions Capture The Flag, équipes, résultats et tendances cyber.">
+  <title>Global CTF Observatory | Cyber Risk Observer</title>
+  <style>
+    :root{--bg:#08111f;--panel:#101d30;--panel2:#14243a;--line:#263b55;--text:#e8f0fa;--muted:#9aadc4;--cyan:#43d9e8;--blue:#5795ff;--green:#55d6a2;--amber:#f5bd61;--red:#ff7777;--radius:16px;--shadow:0 14px 38px rgba(0,0,0,.22)}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#102944 0,transparent 35%),var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}button,input,select{font:inherit}
+    .wrap{max-width:1240px;margin:auto;padding:26px 20px 60px}.topline{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px}
+    .brand{font-size:12px;letter-spacing:.18em;color:var(--cyan);font-weight:800}.nav{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+    .hero{padding:38px 0 26px;display:grid;grid-template-columns:1.5fr .8fr;gap:24px;align-items:center}.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    h1{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.04em;margin:12px 0}.lead{font-size:17px;color:#b8c9dc;max-width:760px}
+    .hero-side{background:linear-gradient(145deg,#142c45,#0d1b2c);border:1px solid var(--line);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero-side strong{display:block;font-size:28px;color:var(--cyan)}.hero-side small{color:var(--muted)}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.toolbar input,.toolbar select{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:11px 13px;border-radius:10px;min-width:150px}.toolbar input{flex:1;min-width:220px}
+    .btn{border:1px solid var(--line);border-radius:10px;background:#19324d;color:var(--text);padding:10px 14px;cursor:pointer}.btn:hover{border-color:var(--cyan)}.btn.primary{background:var(--cyan);color:#04121d;border-color:var(--cyan);font-weight:800}
+    .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 28px}.metric,.panel{background:linear-gradient(160deg,var(--panel),#0d1929);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .metric{padding:17px}.metric span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.metric strong{display:block;font-size:29px;margin-top:5px}.metric em{font-style:normal;color:var(--green);font-size:12px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin:30px 0 12px}.section-head h2{margin:0;font-size:22px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}
+    .grid2{display:grid;grid-template-columns:1.3fr .7fr;gap:15px}.panel{padding:18px}.panel h3{margin:0 0 12px;font-size:16px}.muted{color:var(--muted)}
+    .event-list{display:grid;gap:10px}.event{display:grid;grid-template-columns:90px 1fr auto;gap:13px;align-items:center;padding:13px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.018)}
+    .datebox{background:#142b43;border-radius:10px;text-align:center;padding:8px}.datebox b{display:block;font-size:18px;color:var(--cyan)}.datebox small{font-size:10px;color:var(--muted);text-transform:uppercase}
+    .event h4{margin:0;font-size:15px}.event p{margin:3px 0 0;color:var(--muted);font-size:12px}.tag{display:inline-block;border:1px solid #31516d;border-radius:99px;padding:3px 8px;color:#b9d9f4;font-size:11px;white-space:nowrap}
+    .status{font-size:11px;font-weight:700}.status.live{color:var(--green)}.status.upcoming{color:var(--amber)}.status.past{color:var(--muted)}
+    .table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:11px 9px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+    .bars{display:grid;gap:12px}.barrow{display:grid;grid-template-columns:110px 1fr 35px;gap:9px;align-items:center;font-size:12px}.track{height:8px;background:#21354b;border-radius:20px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:20px}
+    .mapgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.region{padding:13px;border:1px solid var(--line);border-radius:12px;background:#0d1a2a}.region b{display:block;font-size:14px}.region span{color:var(--muted);font-size:12px}
+    .notice{border-left:3px solid var(--amber);padding:10px 13px;background:#241f19;color:#d9c7a7;border-radius:0 9px 9px 0;font-size:12px;margin-top:14px}
+    .footer{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
+    .lang-en [data-fr]{display:none}.lang-fr [data-en]{display:none}
+    @media(max-width:850px){.hero,.grid2{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.metrics{grid-template-columns:1fr 1fr}.event{grid-template-columns:68px 1fr}.event .tag{grid-column:2;justify-self:start}.mapgrid{grid-template-columns:1fr 1fr}.wrap{padding:18px 13px 40px}}
+  </style>
+</head>
+<body class="lang-fr">
+<div class="wrap">
+  <header class="topline">
+    <div class="brand">CYBER RISK OBSERVER <span style="color:#7892ad">/ INTELLIGENCE</span></div>
+    <nav class="nav"><a href="#events">Événements / Events</a><a href="#teams">Équipes / Teams</a><a href="#trends">Tendances / Trends</a><a href="#method">Méthodologie / Methodology</a></nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Global cybersecurity competition watch</div>
+      <h1>GLOBAL CTF<br><span style="color:var(--cyan)">OBSERVATORY</span></h1>
+      <p class="lead" data-fr>Un observatoire indépendant des compétitions Capture The Flag dans le monde : calendrier, équipes, résultats, spécialités techniques et dynamiques de la communauté.</p>
+      <p class="lead" data-en>An independent observatory of Capture The Flag competitions worldwide: events, teams, results, technical categories and community trends.</p>
+      <div class="toolbar">
+        <button class="btn primary" id="langBtn">FR / EN</button>
+        <button class="btn" id="refreshBtn" data-fr>Actualiser les données</button><button class="btn" id="refreshBtnEn" data-en>Refresh data</button>
+        <a class="btn" href="https://ctftime.org/" target="_blank" rel="noopener">CTFtime ↗</a>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <small data-fr>Dernière mise à jour des données</small><small data-en>Last data refresh</small>
+      <strong id="lastUpdate">Chargement…</strong>
+      <small data-fr>Les événements et classements dépendent des données accessibles auprès des sources référencées.</small>
+      <small data-en>Events and rankings depend on data available from the referenced sources.</small>
+    </aside>
+  </section>
+
+  <div class="metrics">
+    <div class="metric"><span data-fr>Événements affichés</span><span data-en>Events displayed</span><strong id="mEvents">—</strong><em data-fr>Calendrier observé</em><em data-en>Observed calendar</em></div>
+    <div class="metric"><span data-fr>À venir</span><span data-en>Upcoming</span><strong id="mUpcoming">—</strong><em data-fr>À surveiller</em><em data-en>On the radar</em></div>
+    <div class="metric"><span data-fr>En cours</span><span data-en>Live now</span><strong id="mLive">—</strong><em data-fr>Compétitions actives</em><em data-en>Active competitions</em></div>
+    <div class="metric"><span data-fr>Équipes référencées</span><span data-en>Teams referenced</span><strong id="mTeams">—</strong><em data-fr>Classement source</em><em data-en>Source ranking</em></div>
+  </div>
+
+  <section id="events">
+    <div class="section-head"><div><h2 data-fr>Calendrier mondial des CTF</h2><h2 data-en>Worldwide CTF calendar</h2><p data-fr>Événements à venir, en cours et archives récentes.</p><p data-en>Upcoming, live and recently completed events.</p></div><span class="tag">DATA: CTFtime / curated sources</span></div>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Rechercher un événement / Search events">
+      <select id="statusFilter"><option value="all">Tous les statuts / All statuses</option><option value="upcoming">À venir / Upcoming</option><option value="live">En cours / Live</option><option value="past">Terminés / Past</option></select>
+      <select id="formatFilter"><option value="all">Tous les formats / All formats</option><option>Jeopardy</option><option>Attack-Defense</option><option>Mixed</option><option>Other</option></select>
+    </div>
+    <div class="panel"><div class="event-list" id="eventsList"><div class="empty">Chargement des événements… / Loading events…</div></div></div>
+    <div class="notice" data-fr>Les dates, formats et statuts sont affichés selon les données reçues. Vérifiez toujours la page officielle de l'organisateur avant de vous inscrire.</div>
+    <div class="notice" data-en>Dates, formats and statuses reflect retrieved data. Always check the organiser's official page before registering.</div>
+  </section>
+
+  <div class="grid2">
+    <section id="teams">
+      <div class="section-head"><div><h2 data-fr>Classement des équipes</h2><h2 data-en>Team leaderboard</h2><p data-fr>Classement mondial publié par la source, lorsqu'il est disponible.</p><p data-en>Source-published global ranking, when available.</p></div></div>
+      <div class="panel table-wrap"><table><thead><tr><th>#</th><th data-fr>Équipe</th><th data-en>Team</th><th data-fr>Pays</th><th data-en>Country</th><th data-fr>Points</th><th data-en>Points</th></tr></thead><tbody id="teamsBody"><tr><td colspan="5" class="muted">Données non chargées.</td></tr></tbody></table></div>
+    </section>
+    <section id="trends">
+      <div class="section-head"><div><h2 data-fr>Spécialités observées</h2><h2 data-en>Observed categories</h2><p data-fr>Taxonomie indicative des disciplines CTF.</p><p data-en>Indicative CTF discipline taxonomy.</p></div></div>
+      <div class="panel"><div class="bars" id="categoryBars"></div><p class="muted" style="font-size:11px;margin:14px 0 0" data-fr>Catégories indicatives, pas une mesure statistique de fréquence.</p><p class="muted" style="font-size:11px;margin:14px 0 0" data-en>Indicative categories, not a statistical frequency measure.</p></div>
+    </section>
+  </div>
+
+  <section>
+    <div class="section-head"><div><h2 data-fr>Couverture géographique</h2><h2 data-en>Geographical coverage</h2><p data-fr>Lecture par grandes régions — la localisation dépend des informations déclarées par les organisateurs.</p><p data-en>Regional view — location depends on information supplied by organisers.</p></div></div>
+    <div class="mapgrid" id="regions">
+      <div class="region"><b>Europe</b><span>Événements et équipes</span></div><div class="region"><b>Amérique du Nord</b><span>Événements et équipes</span></div><div class="region"><b>Asie-Pacifique</b><span>Événements et équipes</span></div><div class="region"><b>Afrique</b><span>Événements et équipes</span></div><div class="region"><b>Amérique latine</b><span>Événements et équipes</span></div><div class="region"><b>Moyen-Orient</b><span>Événements et équipes</span></div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="section-head"><div><h2 data-fr>Méthodologie et périmètre</h2><h2 data-en>Methodology and scope</h2></div></div>
+    <div class="panel">
+      <p data-fr><b>Objet.</b> Recenser et contextualiser les compétitions CTF publiques, leurs organisateurs, équipes et résultats accessibles. L'observatoire complète les plateformes existantes par une lecture éditoriale et des indicateurs propres.</p>
+      <p data-en><b>Purpose.</b> Track public CTF competitions, organisers, teams and accessible results. The observatory complements existing platforms with editorial context and its own indicators.</p>
+      <p data-fr><b>Sources.</b> CTFtime constitue une source de découverte et de référence. Les sites des organisateurs restent prioritaires pour confirmer les dates, règles, inscriptions et résultats. Les données externes ne sont pas présumées exhaustives.</p>
+      <p data-en><b>Sources.</b> CTFtime is used for discovery and reference. Organisers' websites remain authoritative for dates, rules, registration and results. External data is not assumed to be exhaustive.</p>
+      <p data-fr><b>Limites.</b> Une équipe peut utiliser plusieurs noms ; les affiliations et pays ne sont pas toujours vérifiés ; les formats peuvent être mixtes ; un événement répertorié n'est pas nécessairement encore ouvert aux inscriptions.</p>
+      <p data-en><b>Limitations.</b> Teams may use multiple names; affiliations and countries are not always verified; formats may be mixed; a listed event may no longer accept registrations.</p>
+      <p><b>Sources principales / Main sources:</b> <a href="https://ctftime.org/" target="_blank" rel="noopener">CTFtime</a> · <a href="https://ctftime.org/api/" target="_blank" rel="noopener">CTFtime API</a> · <a href="https://www.picoctf.org/" target="_blank" rel="noopener">picoCTF</a> · <a href="https://www.majorleaguecyber.org/" target="_blank" rel="noopener">Major League Cyber</a>.</p>
+      <p class="muted" style="font-size:12px">© Cyber Risk Observer — Global CTF Observatory. Publication indépendante. Les marques et données citées appartiennent à leurs propriétaires respectifs.</p>
+    </div>
+  </section>
+
+  <footer class="footer"><span>CYBER RISK OBSERVER · GLOBAL CTF OBSERVATORY</span><span>FR / EN · Daily data pipeline ready</span></footer>
+</div>
+
+<script>
+(() => {
+  const DATA_URL = "./data/ctf-observatory.json";
+  const CTF_API_URL = "https://ctftime.org/api/v1/events/?limit=30&start=";
+  const $ = id => document.getElementById(id);
+  let events = [], teams = [], lang = "fr";
+  const now = () => Math.floor(Date.now()/1000);
+  const fmt = ts => new Date(ts*1000).toLocaleDateString(lang==="fr"?"fr-FR":"en-GB",{day:"2-digit",month:"short",year:"numeric"});
+  const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  function state(e){const n=now();return e.finish<n?"past":e.start<=n&&e.finish>=n?"live":"upcoming"}
+  function render(){
+    const q=$("search").value.toLowerCase(), sf=$("statusFilter").value, ff=$("formatFilter").value;
+    const filtered=events.filter(e=>(e.title||"").toLowerCase().includes(q)||(e.organizers||[]).join(" ").toLowerCase().includes(q))
+      .filter(e=>sf==="all"||state(e)===sf).filter(e=>ff==="all"||(e.format||"Other").toLowerCase()===ff.toLowerCase());
+    $("mEvents").textContent=events.length;
+    $("mUpcoming").textContent=events.filter(e=>state(e)==="upcoming").length;
+    $("mLive").textContent=events.filter(e=>state(e)==="live").length;
+    $("mTeams").textContent=teams.length||"—";
+    $("eventsList").innerHTML=filtered.length?filtered.map(e=>{
+      const st=state(e), cls=st==="live"?"live":st==="past"?"past":"upcoming";
+      const label=st==="live"?(lang==="fr"?"EN COURS":"LIVE"):st==="past"?(lang==="fr"?"TERMINÉ":"PAST"):(lang==="fr"?"À VENIR":"UPCOMING");
+      const org=(e.organizers||[]).join(", ")||"—";
+      return `<article class="event"><div class="datebox"><b>${new Date(e.start*1000).toLocaleDateString(lang==="fr"?"fr-FR":"en-GB",{day:"2-digit"})}</b><small>${new Date(e.start*1000).toLocaleDateString(lang==="fr"?"fr-FR":"en-GB",{month:"short"})}</small></div><div><h4><a href="${esc(e.url||"https://ctftime.org/")}" target="_blank" rel="noopener">${esc(e.title||"CTF event")}</a></h4><p>${fmt(e.start)} – ${fmt(e.finish)} · ${esc(org)}</p></div><span class="tag">${esc(e.format||"Other")} · <span class="status ${cls}">${label}</span></span></article>`;
+    }).join(""):`<div class="empty">${lang==="fr"?"Aucun événement ne correspond aux filtres.":"No events match these filters."}</div>`;
+    $("teamsBody").innerHTML=teams.length?teams.slice(0,10).map((t,i)=>`<tr><td>${esc(t.place||i+1)}</td><td>${esc(t.name)}</td><td>${esc(t.country||"—")}</td><td>${esc(t.points??"—")}</td></tr>`).join(""):`<tr><td colspan="4" class="muted">${lang==="fr"?"Classement indisponible dans le jeu de données.":"Leaderboard not available in the data feed."}</td></tr>`;
+  }
+  function categories(){
+    const cats=["Web","Cryptography","Reverse engineering","Pwn / Binary exploitation","Forensics","OSINT","Hardware","Network","Miscellaneous"];
+    $("categoryBars").innerHTML=cats.map((c,i)=>`<div class="barrow"><span>${c}</span><div class="track"><div class="fill" style="width:${[90,78,72,68,62,55,35,48,44][i]}%"></div></div><span>—</span></div>`).join("");
+  }
+  async function load(){
+    $("eventsList").innerHTML=`<div class="empty">${lang==="fr"?"Récupération des données…":"Fetching data…"}</div>`;
+    let loaded=false;
+    try{
+      const r=await fetch(DATA_URL,{cache:"no-store"});
+      if(r.ok){const d=await r.json();events=d.events||[];teams=d.teams||[];loaded=true;}
+    }catch(e){}
+    if(!loaded){
+      try{
+        // Fallback public feed. Some browsers or hosting policies may block cross-origin requests.
+        const start=now()-7*86400;
+        const r=await fetch(CTF_API_URL+start,{mode:"cors"});
+        if(!r.ok)throw new Error("Feed unavailable");
+        const d=await r.json();events=d.map(e=>({title:e.title,start:e.start,finish:e.finish,url:e.ctftime_url||e.url,format:e.format||"Other",organizers:(e.organizers||[]).map(o=>o.name||o)}));
+      }catch(err){
+        events=[];teams=[];
+        $("eventsList").innerHTML=`<div class="empty">${lang==="fr"?"Flux indisponible dans le navigateur. Ajoutez le fichier data/ctf-observatory.json via le workflow quotidien ou consultez CTFtime.":"Feed unavailable in this browser. Add data/ctf-observatory.json through the daily workflow or visit CTFtime."}<br><a href="https://ctftime.org/event/list/" target="_blank" rel="noopener">CTFtime event calendar ↗</a></div>`;
+      }
+    }
+    $("lastUpdate").textContent=new Date().toLocaleString(lang==="fr"?"fr-FR":"en-GB");
+    render();categories();
+  }
+  $("langBtn").addEventListener("click",()=>{lang=lang==="fr"?"en":"fr";document.body.className="lang-"+lang;load();});
+  $("refreshBtn").addEventListener("click",load);$("refreshBtnEn").addEventListener("click",load);
+  ["search","statusFilter","formatFilter"].forEach(id=>$(id).addEventListener("input",render));
+  load();
+})();
+</script>
+</body>
+</html>
