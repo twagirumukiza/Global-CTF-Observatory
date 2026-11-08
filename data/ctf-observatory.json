@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-11-07T11:45:01.907749+00:00",
+  "updated_at": "2026-11-08T11:57:27.013787+00:00",
   "source": "CTFtime public API",
   "events": [
-    {
-      "title": "StealthCup 2026",
-      "start": "2026-10-31T13:00:00+00:00",
-      "finish": "2026-10-31T21:00:00+00:00",
-      "url": "https://ctftime.org/event/3482/",
-      "format": "Hack quest",
-      "organizers": [
-        "0x01DA"
-      ]
-    },
     {
       "title": "HKCERT CTF 2026 (Qualifying Round)",
       "start": "2026-11-06T10:00:00+00:00",
