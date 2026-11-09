@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T11:57:27.013787+00:00",
+  "updated_at": "2026-11-09T13:56:56.134151+00:00",
   "source": "CTFtime public API",
   "events": [
     {
@@ -251,16 +251,6 @@
       "format": "Jeopardy",
       "organizers": [
         "bi0s"
-      ]
-    },
-    {
-      "title": "OTERIA Cyber Cup #4",
-      "start": "2026-12-05T09:00:00+00:00",
-      "finish": "2026-12-05T17:00:00+00:00",
-      "url": "https://ctftime.org/event/3493/",
-      "format": "Jeopardy",
-      "organizers": [
-        "OteriHack"
       ]
     },
     {
