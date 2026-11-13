@@ -1,38 +1,7 @@
 {
-  "updated_at": "2026-11-12T13:48:27.572601+00:00",
+  "updated_at": "2026-11-13T13:09:36.392811+00:00",
   "source": "CTFtime public API",
   "events": [
-    {
-      "title": "HKCERT CTF 2026 (Qualifying Round)",
-      "start": "2026-11-06T10:00:00+00:00",
-      "finish": "2026-11-07T10:00:00+00:00",
-      "url": "https://ctftime.org/event/3418/",
-      "format": "Jeopardy",
-      "organizers": [
-        "Black Bauhinia",
-        "HKCERT"
-      ]
-    },
-    {
-      "title": "PINK+ CTF 2026",
-      "start": "2026-11-06T12:00:00+00:00",
-      "finish": "2026-11-09T12:00:00+00:00",
-      "url": "https://ctftime.org/event/3331/",
-      "format": "Jeopardy",
-      "organizers": [
-        "PINK+"
-      ]
-    },
-    {
-      "title": "CSCTF 2026",
-      "start": "2026-11-06T13:00:00+00:00",
-      "finish": "2026-11-08T13:00:00+00:00",
-      "url": "https://ctftime.org/event/3333/",
-      "format": "Jeopardy",
-      "organizers": [
-        "Mirachron"
-      ]
-    },
     {
       "title": "SpookyCTF 2026",
       "start": "2026-11-06T17:00:00+00:00",
