@@ -1,37 +1,7 @@
 {
-  "updated_at": "2026-11-13T13:09:36.392811+00:00",
+  "updated_at": "2026-11-14T12:14:11.318319+00:00",
   "source": "CTFtime public API",
   "events": [
-    {
-      "title": "SpookyCTF 2026",
-      "start": "2026-11-06T17:00:00+00:00",
-      "finish": "2026-11-07T17:00:00+00:00",
-      "url": "https://ctftime.org/event/3339/",
-      "format": "Jeopardy",
-      "organizers": [
-        "NICC"
-      ]
-    },
-    {
-      "title": "BlackAlps CTF 2026",
-      "start": "2026-11-06T18:15:00+00:00",
-      "finish": "2026-11-06T22:30:00+00:00",
-      "url": "https://ctftime.org/event/3242/",
-      "format": "Jeopardy",
-      "organizers": [
-        "BlackAlps"
-      ]
-    },
-    {
-      "title": "Mimic",
-      "start": "2026-11-07T12:00:00+00:00",
-      "finish": "2026-11-08T12:00:00+00:00",
-      "url": "https://ctftime.org/event/3455/",
-      "format": "Jeopardy",
-      "organizers": [
-        "Rare Byte Hub"
-      ]
-    },
     {
       "title": "CyberZerk CTF 2026",
       "start": "2026-11-09T13:00:00+00:00",
