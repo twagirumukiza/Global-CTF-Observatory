@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T12:14:11.318319+00:00",
+  "updated_at": "2026-11-15T12:46:55.043156+00:00",
   "source": "CTFtime public API",
   "events": [
     {
@@ -10,6 +10,16 @@
       "format": "Jeopardy",
       "organizers": [
         "CyberZerk"
+      ]
+    },
+    {
+      "title": "WRAVEN CTF 2026",
+      "start": "2026-11-12T13:00:00+00:00",
+      "finish": "2026-11-13T17:00:00+00:00",
+      "url": "https://ctftime.org/event/3504/",
+      "format": "Jeopardy",
+      "organizers": [
+        "ECX Inc."
       ]
     },
     {
@@ -33,6 +43,16 @@
       ]
     },
     {
+      "title": "Algolympiad CTF 2026",
+      "start": "2026-11-13T14:00:00+00:00",
+      "finish": "2026-11-15T14:00:00+00:00",
+      "url": "https://ctftime.org/event/3501/",
+      "format": "Jeopardy",
+      "organizers": [
+        "Algolymp CTF Team"
+      ]
+    },
+    {
       "title": "Platypwn 2026",
       "start": "2026-11-13T17:00:00+00:00",
       "finish": "2026-11-14T11:00:00+00:00",
@@ -40,16 +60,6 @@
       "format": "Jeopardy",
       "organizers": [
         "Platypwnies"
-      ]
-    },
-    {
-      "title": "WolvCTF 2026",
-      "start": "2026-11-13T23:00:00+00:00",
-      "finish": "2026-11-15T23:00:00+00:00",
-      "url": "https://ctftime.org/event/3049/",
-      "format": "Jeopardy",
-      "organizers": [
-        "w01verines"
       ]
     },
     {
@@ -93,6 +103,16 @@
       ]
     },
     {
+      "title": "WolvCTF 2026",
+      "start": "2026-11-20T23:00:00+00:00",
+      "finish": "2026-11-22T23:00:00+00:00",
+      "url": "https://ctftime.org/event/3049/",
+      "format": "Jeopardy",
+      "organizers": [
+        "w01verines"
+      ]
+    },
+    {
       "title": "Outback Overflow",
       "start": "2026-11-20T23:00:00+00:00",
       "finish": "2026-11-21T23:00:00+00:00",
@@ -133,6 +153,16 @@
       ]
     },
     {
+      "title": "RedReaper CTF",
+      "start": "2026-11-27T11:00:00+00:00",
+      "finish": "2026-11-27T19:00:00+00:00",
+      "url": "https://ctftime.org/event/3502/",
+      "format": "Jeopardy",
+      "organizers": [
+        "RedReaper"
+      ]
+    },
+    {
       "title": "LakeCTF Quals 26-27",
       "start": "2026-11-27T18:00:00+00:00",
       "finish": "2026-11-28T18:00:00+00:00",
@@ -163,6 +193,16 @@
       ]
     },
     {
+      "title": "Black Hat India 2026 Official CTF",
+      "start": "2026-11-28T14:00:00+00:00",
+      "finish": "2026-11-29T14:00:00+00:00",
+      "url": "https://ctftime.org/event/3510/",
+      "format": "Jeopardy",
+      "organizers": [
+        "CTF7"
+      ]
+    },
+    {
       "title": "BlackHat MEA CTF Final 2026",
       "start": "2026-12-01T15:14:59+00:00",
       "finish": "2026-12-03T15:14:59+00:00",
@@ -170,6 +210,16 @@
       "format": "Jeopardy",
       "organizers": [
         "SAFCSP"
+      ]
+    },
+    {
+      "title": "2026 Qiangwang Challenge on Cyber Mimic Defense Finals",
+      "start": "2026-12-03T04:00:00+00:00",
+      "finish": "2026-12-06T04:00:00+00:00",
+      "url": "https://ctftime.org/event/3509/",
+      "format": "Hack quest",
+      "organizers": [
+        "LoveFromMimic"
       ]
     },
     {
@@ -213,6 +263,16 @@
       ]
     },
     {
+      "title": "OTERIA Cyber Cup #4",
+      "start": "2026-12-12T09:00:00+00:00",
+      "finish": "2026-12-12T17:00:00+00:00",
+      "url": "https://ctftime.org/event/3505/",
+      "format": "Jeopardy",
+      "organizers": [
+        "OteriHack"
+      ]
+    },
+    {
       "title": "BSides Algiers 2026",
       "start": "2026-12-17T19:00:00+00:00",
       "finish": "2026-12-19T07:00:00+00:00",
@@ -243,6 +303,16 @@
       ]
     },
     {
+      "title": "THE FINAL EXPLOIT CTF 2026—QUALIFIERS",
+      "start": "2026-12-29T12:00:00+00:00",
+      "finish": "2026-12-31T12:00:00+00:00",
+      "url": "https://ctftime.org/event/3511/",
+      "format": "Jeopardy",
+      "organizers": [
+        "OxV01D"
+      ]
+    },
+    {
       "title": "GaianSpace Perihelion CTF 2027",
       "start": "2027-01-02T18:00:00+00:00",
       "finish": "2027-01-03T18:00:00+00:00",
@@ -250,6 +320,16 @@
       "format": "Jeopardy",
       "organizers": [
         "GaianSpace"
+      ]
+    },
+    {
+      "title": "UofTCTF 2027",
+      "start": "2027-01-09T00:00:00+00:00",
+      "finish": "2027-01-11T00:00:00+00:00",
+      "url": "https://ctftime.org/event/3508/",
+      "format": "Jeopardy",
+      "organizers": [
+        "UofTCTF"
       ]
     },
     {
