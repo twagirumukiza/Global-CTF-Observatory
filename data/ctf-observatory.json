@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-11-15T12:46:55.043156+00:00",
+  "updated_at": "2026-11-16T13:41:44.918919+00:00",
   "source": "CTFtime public API",
   "events": [
-    {
-      "title": "CyberZerk CTF 2026",
-      "start": "2026-11-09T13:00:00+00:00",
-      "finish": "2026-11-22T17:00:00+00:00",
-      "url": "https://ctftime.org/event/3499/",
-      "format": "Jeopardy",
-      "organizers": [
-        "CyberZerk"
-      ]
-    },
     {
       "title": "WRAVEN CTF 2026",
       "start": "2026-11-12T13:00:00+00:00",
