@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-11-18T14:03:22.339285+00:00",
+  "updated_at": "2026-11-19T14:28:10.418732+00:00",
   "source": "CTFtime public API",
   "events": [
-    {
-      "title": "WRAVEN CTF 2026",
-      "start": "2026-11-12T13:00:00+00:00",
-      "finish": "2026-11-13T17:00:00+00:00",
-      "url": "https://ctftime.org/event/3504/",
-      "format": "Jeopardy",
-      "organizers": [
-        "ECX Inc."
-      ]
-    },
     {
       "title": "CSAW CTF Final Round 2026",
       "start": "2026-11-12T17:00:00+00:00",
