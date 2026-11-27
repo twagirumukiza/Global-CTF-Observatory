@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-11-26T15:21:05.453559+00:00",
+  "updated_at": "2026-11-27T15:08:38.161753+00:00",
   "source": "CTFtime public API",
   "events": [
-    {
-      "title": "EyesOpenCTF 7th edition",
-      "start": "2026-11-20T10:00:00+00:00",
-      "finish": "2026-11-22T10:00:00+00:00",
-      "url": "https://ctftime.org/event/3419/",
-      "format": "Jeopardy",
-      "organizers": [
-        "EyesOpen_Security"
-      ]
-    },
     {
       "title": "GlacierCTF 2026",
       "start": "2026-11-20T18:00:00+00:00",
